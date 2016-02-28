@@ -1,0 +1,5 @@
+{
+  base: 'xyz',
+  name: 'hello',
+  contents: [1, 2, 3]
+}

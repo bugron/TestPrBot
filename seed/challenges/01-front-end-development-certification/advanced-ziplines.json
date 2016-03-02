@@ -6,7 +6,7 @@
   "challenges": [
     {
       "id": "bd7158d8c442eddfaeb5bd17",
-      "title": "Build a JavaScript Calculator",
+      "title": "Build a Calculator",
       "description": [
         "<strong>Objective:</strong> Build a <a href='http://codepen.io' target='_blank'>CodePen.io</a> app that is functionally similar to this: <a href='http://codepen.io/FreeCodeCamp/full/zrRzMR' target='_blank'>http://codepen.io/FreeCodeCamp/full/zrRzMR</a>.",
         "<strong>Rule #1:</strong> Don't look at the example project's code. Figure it out for yourself.",

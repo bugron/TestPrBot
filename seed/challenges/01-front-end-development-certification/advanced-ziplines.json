@@ -40,7 +40,7 @@
     },
     {
       "id": "bd7158d8c442eddfaeb5bd0f",
-      "title": "Build a Pomodoro Clock",
+      "title": "Build a Clock",
       "description": [
         "<strong>Objective:</strong> Build a <a href='http://codepen.io' target='_blank'>CodePen.io</a> app that is functionally similar to this: <a href='http://codepen.io/FreeCodeCamp/full/VemPZX' target='_blank'>http://codepen.io/FreeCodeCamp/full/VemPZX</a>.",
         "<strong>Rule #1:</strong> Don't look at the example project's code. Figure it out for yourself.",

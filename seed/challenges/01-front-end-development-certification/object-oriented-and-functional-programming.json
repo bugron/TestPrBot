@@ -59,7 +59,7 @@
         "We are also able to create objects using <code>constructor</code> functions.",
         "A <code>constructor</code> function is given a capitalized name to make it clear that it is a <code>constructor</code>.",
         "Here's an example of a <code>constructor</code> function:",
-        "<blockquote>var Car = function() {<br>&nbsp;&nbsp;this.wheels = 4;<br>&nbsp;&nbsp;this.engines = 1;<br>&nbsp;&nbsp;this.seats = 1;<br>};</blockquote>",
+        "<blockquote>var Car = function() {<br>&nbsp;&nbsp;this.wheels = 4;<br>&nbsp;&nbsp;this.engines = 1;<br>&nbsp;&nbsp;this.seats = 5;<br>};</blockquote>",
         "In a <code>constructor</code> the <code>this</code> variable refers to the new object being created by the constructor. So when we write,",
         "<code>&nbsp;&nbsp;this.wheels = 4;</code>",
         "inside of the <code>constructor</code> we are giving the new object it creates a property called <code>wheels</code> with a value of <code>4</code>.",
@@ -70,7 +70,7 @@
         "var Car = function() {",
         "  this.wheels = 4;",
         "  this.engines = 1;",
-        "  this.seats = 1;",
+        "  this.seats = 5;",
         "};",
         "",
         "// Only change code below this line.",
@@ -83,7 +83,7 @@
         "(function() {return JSON.stringify(new MotorBike());})();"
       ],
       "solutions": [
-        "var Car = function() {\n  this.wheels = 4;\n  this.engines = 1;\n  this.seats = 1;\n};\n\nvar myCar = new Car();\n\nvar MotorBike = function() {\n  this.engines = 1;\n  this.seats = 1;\n  this.wheels = 4;\n};\n\nvar myMotorBike = new MotorBike();"
+        "var Car = function() {\n  this.wheels = 4;\n  this.engines = 1;\n  this.seats = 5;\n};\n\nvar myCar = new Car();\n\nvar MotorBike = function() {\n  this.engines = 1;\n  this.seats = 1;\n  this.wheels = 4;\n};\n\nvar myMotorBike = new MotorBike();"
       ],
       "tests": [
         "assert(typeof (new MotorBike()).engines === 'number', 'message: <code>MotorBike</code> should have a <code>engines</code> attribute set to a number.');",
@@ -305,8 +305,7 @@
       "title": "Iterate over Arrays with .map",
       "description": [
         "The <code>map</code> method is a convenient way to iterate through arrays. Here's an example usage:",
-        "<blockquote>var timesFour = oldArray.map(function(val){<br>&nbsp;&nbsp;return val * 4;<br>});</blockquote>",
-        "",
+        "<blockquote>var oldArray = [1, 2, 3];<br>var timesFour = oldArray.map(function(val){<br>&nbsp;&nbsp;return val * 4;<br>});<br>console.log(timesFour); // returns [4, 8, 12]<br>console.log(oldArray);  // returns [1, 2, 3]</blockquote>",
         "The <code>map</code> method will iterate through every element of the array, creating a new array with values that have been modified by the callback function, and return it.  Note that it does not modify the original array.",
         "In our example the callback only uses the value of the array element (the <code>val</code> argument) but your callback can also include arguments for the <code>index</code> and <code>array</code> being acted on.",
         "Use the map function to add 3 to every value in the variable <code>oldArray</code>, and save the results into variable <code>newArray</code>. oldArray should not change."
@@ -320,6 +319,9 @@
       ],
       "tail": [
         "(function() {return newArray;})();"
+      ],
+      "solutions": [
+        "var oldArray = [1,2,3,4,5];\nvar newArray = oldArray.map(function(val){\n  return val + 3;\n});"
       ],
       "tests": [
         "assert.deepEqual(oldArray, [1,2,3,4,5], 'message: You should not change the original array.');",
@@ -335,7 +337,6 @@
         "<code>var porCuatro = vectorAntiguo.map(function(val){</code>",
         "<code>&nbsp;&nbsp;return val * 4;</code>",
         "<code>});</code>",
-        "",
         "El método <code>map</code> iterará sobre cada elemento del vector, creando un nuevo vector con los valores modificados por la función de devolución de llamada (<em>callback</em>) y retornará ese nuevo arreglo.",
         "En nuestro ejemplo, la función de devolución de llamada sólo usa el valor del elemento del vector sobre el que está iterando (parámetro <code>val</code>), pero tu función de devolución de llamada también puede incluir parámetros para el <code>índice</code> y el <code>vector</code> completo. ",
         "Usa la función <code>map</code> para añadir 3 a cada valor de la variable <code>oldArray</code>."
@@ -347,6 +348,7 @@
       "description": [
         "The array method <code>reduce</code> is used to iterate through an array and condense it into one value.",
         "To use <code>reduce</code> you pass in a callback whose arguments are an accumulator (in this case, <code>previousVal</code>) and the current value (<code>currentVal</code>).",
+        "The accumulator is like a total that <code>reduce</code> keeps track of after each operation. The current value is just the next element in the array you're iterating through.",
         "<code>reduce</code> has an optional second argument which can be used to set the initial value of the accumulator. If no initial value is specified it will be the first array element and <code>currentVal</code> will start with the second array element.",
         "Here is an example of <code>reduce</code> being used to subtract all the values of an array:",
         "<blockquote>var singleVal = array.reduce(function(previousVal, currentVal) {<br>&nbsp;&nbsp;return previousVal - currentVal;<br>}, 0);</blockquote>",
@@ -362,6 +364,9 @@
       ],
       "tail": [
         "(function() {return singleVal;})();"
+      ],
+      "solutions": [
+        "var array = [4,5,6,7,8];\nvar singleVal = 0;\nsingleVal = array.reduce(function(previousVal, currentVal) {\n  return previousVal + currentVal;\n}, 0);"
       ],
       "tests": [
         "assert(singleVal == 30, 'message: <code>singleVal</code> should be equal to the sum of all items in the <code>array</code> variable.');",
@@ -391,7 +396,7 @@
         "The following code is an example of using <code>filter</code> to remove array elements that are equal to five:",
         "Note: We omit the second and third arguments since we only need the value",
         "<blockquote>array = array.filter(function(val) {<br>&nbsp;&nbsp;return val !== 5;<br>});</blockquote>",
-        "Use <code>filter</code> to create a new array with all the values from <code>oldArray</code> which are less than 6.<br><code>oldArray</code> should not change."
+        "Use <code>filter</code> to create a new array with all the values from <code>oldArray</code> which are less than 6. The <code>oldArray</code> should not change."
       ],
       "challengeSeed": [
         "var oldArray = [1,2,3,4,5,6,7,8,9,10];",
@@ -402,6 +407,9 @@
       ],
       "tail": [
         "(function() {return newArray;})();"
+      ],
+      "solutions": [
+        "var oldArray = [1,2,3,4,5,6,7,8,9,10];\nvar newArray = oldArray.filter(function(val) {\n  return val < 6;\n});"
       ],
       "tests": [
         "assert.deepEqual(oldArray, [1,2,3,4,5,6,7,8,9,10], 'message: You should not change the original array.');",
@@ -431,10 +439,11 @@
         "You can use the method <code>sort</code> to easily sort the values in an array alphabetically or numerically.",
         "Unlike the previous array methods we have been looking at, <code>sort</code> actually alters the array in place. However, it also returns this sorted array.",
         "<code>sort</code> can be passed a compare function as a callback. The compare function should return a negative number if <code>a</code> should be before <code>b</code>, a positive number if <code>a</code> should be after <code>b</code>, or <code>0</code> if they are equal.",
-        "If no compare function is passed in it will convert the values to strings and sort alphabetically.",
+        "If no compare (callback) function is passed in, it will convert the values to strings and sort alphabetically.",
         "Here is an example of using sort with a compare function that will sort the elements from smallest to largest number:",
         "<blockquote>var array = [1, 12, 21, 2];<br>array.sort(function(a, b) {<br>&nbsp;&nbsp;return a - b;<br>});</blockquote>",
-        "Use <code>sort</code> to sort <code>array</code> from largest to smallest."
+        "Use <code>sort</code> to sort <code>array</code> from largest to smallest.",
+        "Further explanation on the <code>.sort()</code> method can be found <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort' target='_blank'>here</a>."
       ],
       "challengeSeed": [
         "var array = [1, 12, 21, 2];",
@@ -445,6 +454,9 @@
       ],
       "tail": [
         "(function() {return array;})();"
+      ],
+      "solutions": [
+        "var array = [1, 12, 21, 2];\narray.sort(function(a, b) {\n  return b - a;\n});"
       ],
       "tests": [
         "assert.deepEqual(array, [21, 12, 2, 1], 'message: You should have sorted the array from largest to smallest.');",
@@ -487,6 +499,9 @@
       "tail": [
         "(function() {return newArray;})();"
       ],
+      "solutions": [
+        "var array = [1,2,3,4,5,6,7];\nvar newArray = [];\nnewArray = array.reverse();"
+      ],
       "tests": [
         "assert.deepEqual(newArray, [7,6,5,4,3,2,1], 'message: You should reverse the array.');",
         "assert(editor.getValue().match(/\\.reverse\\s*\\(\\)/gi), 'message: You should use the <code>reverse</code> method.');",
@@ -527,6 +542,9 @@
       "tail": [
         "(function() {return newArray;})();"
       ],
+      "solutions": [
+        "var oldArray = [1,2,3];\nvar newArray = [];\nvar concatMe = [4,5,6];\nnewArray = oldArray.concat(concatMe);"
+      ],
       "tests": [
         "assert.deepEqual(newArray, [1,2,3,4,5,6], 'message: You should concatenate the two arrays together.');",
         "assert(editor.getValue().match(/\\.concat\\s*\\(/gi), 'message: You should be using the <code>concat</code> method to merge the two arrays.');",
@@ -549,7 +567,7 @@
       "description": [
         "You can use the <code>split</code> method to split a string into an array.",
         "<code>split</code> uses the argument you pass in as a delimiter to determine which points the string should be split at.",
-        "Here is an example of <code>split</code> being used to split an array at every <code>s</code> character:",
+        "Here is an example of <code>split</code> being used to split a string at every <code>s</code> character:",
         "<code>var array = string.split('s');</code>",
         "Use <code>split</code> to create an array of words from <code>string</code> and assign it to <code>array</code>."
       ],
@@ -563,6 +581,9 @@
       ],
       "tail": [
         "(function() {return array;})();"
+      ],
+      "solutions": [
+        "var string = \"Split me into an array\";\nvar array = [];\narray = string.split(\" \");"
       ],
       "tests": [
         "assert(/\\.split\\(/gi, 'message: You should use the <code>split</code> method on the string.');",
@@ -598,6 +619,9 @@
       ],
       "tail": [
         "(function() {return joinedString;})();"
+      ],
+      "solutions": [
+        "var joinMe = [\"Split\",\"me\",\"into\",\"an\",\"array\"];\nvar joinedString = '';\njoinedString = joinMe.join(\" \");"
       ],
       "tests": [
         "assert(typeof joinedString === 'string' && joinedString === \"Split me into an array\", 'message: You should join the elements of the array with spaces.');",

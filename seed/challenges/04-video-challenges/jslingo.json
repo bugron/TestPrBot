@@ -15,7 +15,7 @@
         "These videos aren't going to teach you JavaScript - you will be introduced to terms and concepts that will be valuable as you continue to practice and learn."
       ],
       "challengeSeed": [
-        "137072373"
+        "NFaZKFTycmc"
       ],
       "tests": [
         [
@@ -50,7 +50,7 @@
         "Numbers are pretty self-explanatory - a number is a value that consists only of digits, though it can also contain a decimal or a negative sign."
       ],
       "challengeSeed": [
-        "137072769"
+        "fahY2YY5Atg"
       ],
       "tests": [
         [
@@ -78,14 +78,14 @@
       "title": "JavaScript Lingo: Variables & camelCase",
       "description": [
         "We are going to cover what constitutes a variable, and the reasoning behind camelCase.",
-        "A variable, also referred to as 'var', is the name or placeholder for a boolean, string, number, or other piece of static information.",
+        "A variable also referred to as 'var', is the name or placeholder for a boolean, string, number, or another piece of static information.",
         "You can use Google Dev Tools to inspect the Free Code Camp home page and look for some variables.",
         "You 'declare' variables the first time with 'var' in front of it, but those can be referenced later in your script.",
         "camelCase is the way that JavaScript pushes words together and still keeps them legible. The first letter of the first word is lowercase, along with the remainder of the word, but the first letter of every consecutive word is capitalized. There are no spaces. Examples: brianaLovesHerPets, bestFoodIsCheese, and codeIsWorthLearning.",
         "When you name variables, utilize camelCase. Also try to keep the names descriptive and short so that others (and yourself!) can tell what that variable is referring to just by the name."
       ],
       "challengeSeed": [
-        "137078492"
+        "NJhXiR1z7Kg"
       ],
       "tests": [
         [
@@ -123,7 +123,7 @@
         "Notice the curly brackets, the 'keys' with values like name or food,, and the value called a 'property' that is tied to the 'key', like Briana or cheese. These are ALL stored as strings, although booleans, numbers, and other types of data are also valid."
       ],
       "challengeSeed": [
-        "137080554"
+        "yHLGUxt0EKc"
       ],
       "tests": [
         [
@@ -152,12 +152,12 @@
       "id": "56b15f15632298c12f315189",
       "title": "JavaScript Lingo: Finding and Indexing Data in Arrays",
       "description": [
-        "There are many reasons you might need to access a certain piece of data from within a larger set, and you do that by referencing it's index.",
+        "There are many reasons you might need to access a certain piece of data from within a larger set, and you do that by referencing its index.",
         "We won't get into syntax now, but you should know that the first thing in an array is actually index 0.",
         "This goes for strings and objects, too. All of these indices start at 0, so if you're looking asking the code to find indexArr[2], you're really going to get the third piece of information in that array."
       ],
       "challengeSeed": [
-        "137081193"
+        "FACqPCLxPTY"
       ],
       "tests": [
         [
@@ -185,7 +185,7 @@
       "title": "JavaScript Lingo: Manipulating Data",
       "description": [
         "Methods and functions are ways you can manipulate variables or other sets of information.",
-        "Methods are built in to JavaScript, and you will become more familiar with these as you write functions for the bonfires.",
+        "Methods are built into JavaScript, and you will become more familiar with these as you write functions for the bonfires.",
         "I'd suggest looking through the MDN (Mozilla Developer Network that we discussed in the first video) to familiarize yourself with the sheer amount and general potential for the methods that exist. <a href='http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Methods_Index' target='_blank'>developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Methods_Index</a>",
         "Examples include '.split(' ')', which will turn a string into an array and can do so in many different ways. Methods are powerful - many times when you want your script to do something, there's a method for that.",
         "Functions, like variables, are something you define and create.",
@@ -193,7 +193,7 @@
         "You'll become more familiar with syntax there, but for now, just remember that with methods and functions you can do almost anything with your code."
       ],
       "challengeSeed": [
-        "137081423"
+        "vZAm3Ve9CGM"
       ],
       "tests": [
         [
@@ -232,7 +232,7 @@
         "There are ways around this, and in general it doesn't pose issues, but it's something you should be aware of in the event you run into some problems that aren't making sense."
       ],
       "challengeSeed": [
-        "137081785"
+        "pyU5zV4tIL4"
       ],
       "tests": [
         [
@@ -267,7 +267,7 @@
         "You don't need to understand everything here - just know that loops exist when you need to traverse a set of data and they can cut down on the amount of code you need to write."
       ],
       "challengeSeed": [
-        "137082032"
+        "Hzzmqhc3U0o"
       ],
       "tests": [
         [
@@ -296,14 +296,14 @@
       "description": [
         "RegExp is not formatted like anything else in JS, and can have a steep learning curve.",
         "RegExp can also be an incredibly useful and efficient tool.",
-        "Using RegExp, you can match, replace, search, and split a string, one of the more difficult types of values to manipulate.",
+        "Using RegExp, you can match, replace, search, and split a string, one of the most difficult types of values to manipulate.",
         "Like with all of the other videos, we won't get into the nitty gritty, but I want to show you a few examples of where RegExp is useful.",
         "If you wanted to create a registration page that verified passwords contained at least a number and a capital letter, you could use RegExp.",
         "If you wanted to ensure that dates entered in a page were all valid dates in the future, you could use RegExp.",
         "While there are limitless ways to use RegExp, many of them include validating or automatically editing information."
       ],
       "challengeSeed": [
-        "137082304"
+        "EgFjQ8ug3W8"
       ],
       "tests": [
         [

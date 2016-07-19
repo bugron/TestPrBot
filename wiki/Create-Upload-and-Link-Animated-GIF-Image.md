@@ -1,5 +1,5 @@
 1. Download [LICEcap](http://www.cockos.com/licecap/) and install.
-2. Open and start recording to create animated GIF.
+2. Open and then start recording to create animated GIF.
 3. Upload the `.gif` file in [EZGIF.com](http://ezgif.com/optimize).
    - Crop, Resize and Optimize as many times or as required.
 4. Download animated GIF.

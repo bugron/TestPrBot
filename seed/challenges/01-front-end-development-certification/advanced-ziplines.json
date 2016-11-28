@@ -6,7 +6,7 @@
   "challenges": [
     {
       "id": "bd7158d8c442eddfaeb5bd17",
-      "title": "Build a JavaScript Calculator",
+      "title": "Build a Calculator",
       "description": [
         "<strong>Objective:</strong> Build a <a href='https://codepen.io' target='_blank'>CodePen.io</a> app that is functionally similar to this: <a href='https://codepen.io/FreeCodeCamp/full/PNKdjo/' target='_blank'>https://codepen.io/FreeCodeCamp/full/PNKdjo/</a>.",
         "<strong>Rule #1:</strong> Don't look at the example project's code. Figure it out for yourself.",
@@ -40,7 +40,7 @@
     },
     {
       "id": "bd7158d8c442eddfaeb5bd0f",
-      "title": "Build a Pomodoro Clock",
+      "title": "Build a Clock",
       "description": [
         "<strong>Objective:</strong> Build a <a href='https://codepen.io' target='_blank'>CodePen.io</a> app that is functionally similar to this: <a href='https://codepen.io/FreeCodeCamp/full/aNyxXR/' target='_blank'>https://codepen.io/FreeCodeCamp/full/aNyxXR/</a>.",
         "<strong>Rule #1:</strong> Don't look at the example project's code. Figure it out for yourself.",
